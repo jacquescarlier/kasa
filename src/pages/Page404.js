@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
-import picture404 from "../pictures/404.png"
 
 const Page404 = () => {
   return (

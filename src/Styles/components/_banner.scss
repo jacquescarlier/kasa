@@ -1,9 +1,9 @@
-.banner {
-    padding: 0px 0px 40px;
+.image-banner {
+    padding: 20px 0px 40px;
     position: relative;
 }
 
-.banner img {
+ img {
     height: 223px;
     width: 100%;
     border-radius: 25px;
@@ -11,7 +11,7 @@
 }
 .banner-text {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     font-size: 48px;
     color: white;
     font-weight: 300;

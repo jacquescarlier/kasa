@@ -10,12 +10,17 @@ footer {
   align-items: center;
   row-gap: 40px;
   padding-top: 15px;
-}
-footer img {
-  filter: brightness(0) invert(1);
-  width: 122px;
-}
-footer p {
-  font-size: 24px;
-  text-align: center;
+
+    p {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    img{
+      filter: brightness(0) invert(1);
+     width: 122px;
+     height: 68px;
+      object-fit:contain;
+      align-items: center;
+    }
 }

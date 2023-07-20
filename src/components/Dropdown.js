@@ -10,8 +10,8 @@ function Dropdown({ children, text }) {
     }
     return (
         <div className="dropdown">
-            <div className="dropdown__config">
-                <p className="dropdown__config--text">{text}</p>
+            <div className="dropdownInitial">
+                <p className="dropdownText">{text}</p>
                 <img
                     onClick={handleClick}
                     src={Arrow}
@@ -19,7 +19,7 @@ function Dropdown({ children, text }) {
                     className={isRotated ? "rotated" : "arrow"}
                 />
             </div>
-            <div className={`dropdown__config--content ${isOpen ? "open" : ""}`}>
+            <div className={`dropdownContent ${isOpen ? "open" : "close"}`}>
                 {children}
             </div>
         </div >

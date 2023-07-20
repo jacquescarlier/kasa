@@ -11,8 +11,8 @@ const About = () => {
       <container-general>
         <Header />
         <Banner image={picture} alt="photo de montagne" title="" />
-        <section className="drop scrollingMenuAPropos">
-          <div className=" drop dropdownAbout">
+        <section className="drop dropApropos">
+          <div className=" drop_apropos">
             <Dropdown text="Fiabilité">
               <p>
                 Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -37,7 +37,7 @@ const About = () => {
             <Dropdown text="Sécurité">
               <p>
                 La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
-                que pour les voyageurs, chaque logement correspond aux crutères
+                que pour les voyageurs, chaque logement correspond aux critères
                 de sécurité établis par nos services. En laissant une note aussi
                 bien à l'hôte qu'au locataire, cela permet à nos équipes de
                 vérifier que les standards sont bien respectés. Nous organisons

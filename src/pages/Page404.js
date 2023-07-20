@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
+import picture404 from "../pictures/404.png"
 
 const Page404 = () => {
   return (
@@ -9,8 +10,8 @@ const Page404 = () => {
       <container-general>
         <Header />
         <div className="page404">
-        <img src="404.png" alt="" />
-        <h1>Oups! La page que vous demandez n'existe pas.</h1>
+        <h1>404</h1>
+        <h2>Oups! La page que vous demandez n'existe pas.</h2>
         <NavLink to="/"><p className="goHome">Retourner sur la page d'accueil</p></NavLink>
         </div>
       </container-general>

@@ -11,8 +11,8 @@ const About = () => {
       <container-general>
         <Header />
         <Banner image={picture} alt="photo de montagne" title="" />
-        <section className="drop dropApropos">
-          <div className=" drop_apropos">
+        <section className="dropApropos">
+          <div className=" drop-apropos">
             <Dropdown text="Fiabilité">
               <p>
                 Les annonces postées sur Kasa garantissent une fiabilité totale.

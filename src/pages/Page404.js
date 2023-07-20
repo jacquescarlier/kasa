@@ -2,9 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import "../Styles/components/404.css"
-import "../Styles/general.css";
-
 const Page404 = () => {
   return (
     <div>

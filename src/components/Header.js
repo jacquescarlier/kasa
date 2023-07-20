@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import '../Styles/components/header.css'
+
 
 function Header() {
   return (

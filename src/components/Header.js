@@ -1,9 +1,9 @@
 import Navigation from "./Navigation";
-
+import logoKasa from "../pictures/LogoKasa.png"
 function Header() {
   return (
     <div className="header">
-      <img src="logoKasa.png" alt="logo kasa" />
+      <img src={logoKasa} alt="logo kasa" />
       <Navigation />
     </div>
   );

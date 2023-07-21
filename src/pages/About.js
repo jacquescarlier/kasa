@@ -48,7 +48,7 @@ const About = () => {
           </div>
         </section>
       </container-general>
-      <Footer />
+      <Footer className="footer" />
     </div>
   );
 };

@@ -7,6 +7,11 @@
   border-radius: 20px;
   padding: 50px 4.86%;
 
+  @include tab {
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+  }
   .card-style {
     display: flex;
     flex-direction: row;
@@ -17,7 +22,11 @@
     @include desktop-large {
       gap: 25px;
     }
-
+    @include tab {
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
     .card-div {
       width: 30%;
       height: 340px;
@@ -35,7 +44,7 @@
 
       @include tab {
         height: 255px;
-        width: 90%;
+        width: 100%;
       }
 
       &::before {

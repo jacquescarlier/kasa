@@ -2,6 +2,9 @@
     padding: 20px 0px 40px;
     position: relative;
 
+    @include tab {
+        padding: 20px 0;
+    }
     img {
         height: 223px;
         width: 100%;

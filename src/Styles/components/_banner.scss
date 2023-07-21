@@ -1,22 +1,32 @@
 .image-banner {
-    padding: 20px 0px 40px;
-    position: relative;
+  padding: 20px 0px 40px;
+  position: relative;
 }
 
- img {
-    height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    object-fit: cover;
+img {
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+
+  @include tab {
+    height: 111px;
+  }
 }
 .banner-text {
-    position: absolute;
-    bottom: 45%;
-    font-size: 48px;
-    color: white;
-    font-weight: 300;
-    margin: 0;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  bottom: 35%;
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 
+  @include tab {
+    width: 65%;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 10px;
+  }
 }

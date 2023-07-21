@@ -2,15 +2,23 @@ ul {
     display: flex;
     gap: 50px;
     list-style: none;
-}
-li {
-    color: #FF6080;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 34px;
-    text-align: right;
-}
+        @include tab {
+            gap: 10px;
+        }
 
-a {
-    text-decoration: none;
+        li {
+            color: #FF6080;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            text-align: right;
+            
+            @include tab {
+                font-size: 12px;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+        }
 }

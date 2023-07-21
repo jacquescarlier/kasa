@@ -2,13 +2,14 @@
   * {
     box-sizing: border-box;
   }
-  
+  html{
+    min-height: 100%;
+  }
   body {
     width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
     margin: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -17,8 +18,13 @@
   container-general {
     width: 100%;
     margin: auto;
-    padding: 40px 10%;
+    padding: 40px 6.95%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+
+    @include desktop-large {
+      padding: 40px 3.5%;
+    }
+    
   }
   

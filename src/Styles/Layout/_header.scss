@@ -1,18 +1,29 @@
 .header {
-    height: 68px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+    @include tab {
+        height: 47px;
+    }
 
-
-img{
+  img {
     height: 68px;
     width: 210px;
-    object-fit:contain;
+    object-fit: contain;
     padding: 5px;
     align-items: center;
-}
-.navigation {
+
+    @include tab {
+      height: 47px;
+      width: 145px;
+    }
+  }
+  .navigation {
     padding: 20px 0px;
-}
+
+    @include tab {
+        padding: 10px 0px;
+    }
+  }
 }

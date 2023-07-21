@@ -16,6 +16,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @include tab {
+      width: 100%;
+    }
+
 
     .dropdown {
       width: 100%;
@@ -45,14 +49,14 @@
 
       .open {
         max-height: 1000px;
-        opacity: 1;
-        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        odisplay: flex;
+        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
       }
 
       .close {
-        max-height: 0;
-        opacity: 0;
-        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        max-height: 0px;
+        display: none;
+        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
       }
 
       .arrow {

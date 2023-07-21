@@ -25,6 +25,9 @@
     @include desktop-large {
       padding: 40px 3.5%;
     }
+    @include tab {
+      padding: 10px 3.5%;
+    }
     
   }
   

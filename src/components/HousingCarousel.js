@@ -2,15 +2,7 @@ import React, { useState } from "react"
 import ArrowRight from "../pictures/arrow_forward.png"
 import ArrowLeft from "../pictures/arrow_back.png"
 
-import { useParams } from "react-router-dom"
-import logements from '../datas/logements.json'
-
-const useHousing = () => {
-    const { id } = useParams();
-    const logement = logements.find((item) => item.id === id)
-    return logement;
-};
-
+import useHousing from "../components/UseHousing"
 
 function Carrousel() {
     const logement = useHousing();

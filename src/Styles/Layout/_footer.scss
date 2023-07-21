@@ -1,13 +1,11 @@
 footer {
   background-color: black;
-  color: white;
+  color: $neutral-color;
   margin: 0;
   width: 100%;
   height: 209px;
-  display: flex;
+  @include flex-justify-items-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   row-gap: 30px;
   /*position: fixed;
   bottom: 0;*/

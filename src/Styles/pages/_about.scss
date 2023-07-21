@@ -5,16 +5,14 @@
 
 .dropApropos {
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-justify-items-center;
+  
 
   .drop-apropos {
     width: 80%;
-    display: flex;
+    @include flex-column-justify-center;
     gap: 30px;
-    flex-direction: column;
-    justify-content: center;
+    
 
     @include tab {
       width: 100%;
@@ -26,21 +24,20 @@
 
 
       .dropdownInitial {
-        display: flex;
+        @include flex-items-center;
         justify-content: space-between;
-        align-items: center;
         padding: 10px;
         border-radius: 10px;
         color: white;
         font-size: 18px;
-        background-color: #FF6060;
+        background-color: $primary-color;
         height: 50px;
       }
 
       .dropdownContent {
         overflow: hidden;
-        background-color: #F6F6F6;
-        color: #FF6060;
+        background-color: $card-color;
+        color: $primary-color;
         font-size: 18px;
         padding: 20px;
         font-weight: 300;

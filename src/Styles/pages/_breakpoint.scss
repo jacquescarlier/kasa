@@ -19,5 +19,6 @@ $breakpoint:(
 @mixin desktop-large {
 @media screen and (min-width: map-get($breakpoint, desktop-large)){
     @content;
+    /*marge autour de container général */
 }
 }

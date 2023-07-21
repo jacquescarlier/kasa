@@ -4,26 +4,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-        
-        h1 {
-            font-size: 250px;
-            font-weight: 700;
-            color: #FF6060;
-            margin: 8% 0;
-        }
 
-        h2 { 
-            margin: 8% auto;
-            font-size: 38px;
-            font-weight: 500;
-            color: #FF6060;
-        }
 
-        .goHome{
-            margin: 8% auto;
-            font-size: 18px;
-            color: #FF6060;
-  text-decoration: underline #FF6060;
-        }
+    h1 {
+        font-size: 250px;
+        font-weight: 700;
+        color: #FF6060;
+        margin: 8% 0;
+    }
+
+    h2 {
+        margin: 8% auto;
+        font-size: 38px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    .goHome {
+        margin: 8% auto;
+        font-size: 18px;
+        color: #FF6060;
+        text-decoration: underline #FF6060;
+    }
 }

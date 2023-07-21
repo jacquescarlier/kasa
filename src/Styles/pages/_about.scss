@@ -4,65 +4,65 @@
   align-items: center;
   justify-content: center;
 
-    .drop-apropos {
-      width: 80%;
-      display: flex;
-      gap: 30px;
-      flex-direction: column;
-      justify-content: center;
-    
+  .drop-apropos {
+    width: 80%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
 
-      .dropdown {
-        width: 100%;
-      
 
-        .dropdownInitial {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px;
-          border-radius: 10px;
-          color: white;
-          font-size: 18px;
-          background-color: #FF6060;
-          height: 50px;
-        }
+    .dropdown {
+      width: 100%;
 
-        .dropdownContent {
-          overflow: hidden;
-          background-color: #F6F6F6;
-          color: #FF6060;
-          font-size: 18px;
-          padding: 20px;
-          font-weight: 300;
-          line-height: 25px;
-        }
 
-          .open {
-            max-height: 1000px;
-            opacity: 1;
-            transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
-          }
+      .dropdownInitial {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        background-color: #FF6060;
+        height: 50px;
+      }
 
-          .close {
-            max-height: 0;
-            opacity: 0;
-            transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
-          }
+      .dropdownContent {
+        overflow: hidden;
+        background-color: #F6F6F6;
+        color: #FF6060;
+        font-size: 18px;
+        padding: 20px;
+        font-weight: 300;
+        line-height: 25px;
+      }
 
-          .arrow {
-            width: 20px;
-            height: 20px;
-            transition: all 200ms ease-in-out;
-            transform: rotate(0deg);
-          }
+      .open {
+        max-height: 1000px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+      }
 
-          .rotated {
-            width: 20px;
-            height: 20px;
-            transition: all 200ms ease-in-out;
-            transform: rotate(180deg);
-          }
-      }  
+      .close {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      .arrow {
+        width: 20px;
+        height: 20px;
+        transition: all 200ms ease-in-out;
+        transform: rotate(0deg);
+      }
+
+      .rotated {
+        width: 20px;
+        height: 20px;
+        transition: all 200ms ease-in-out;
+        transform: rotate(180deg);
+      }
     }
+  }
 }

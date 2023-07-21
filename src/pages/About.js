@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import picture from "../pictures/banniereAbout.png";
-import Dropdown from "../components/Dropdown"
+import Dropdown from "../components/Dropdown";
 
 const About = () => {
   return (

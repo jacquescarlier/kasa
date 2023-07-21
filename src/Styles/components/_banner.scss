@@ -10,6 +10,7 @@
         width: 100%;
         border-radius: 25px;
         object-fit: cover;
+        filter: brightness(0.6);
 
         @include tab {
             height: 111px;
@@ -18,9 +19,9 @@
 
     .banner-text {
         position: absolute;
-        bottom: 35%;
+        bottom: 45%;
         font-size: 48px;
-        color: white;
+        color: #FFFFFF;
         font-weight: 500;
         margin: 0;
         width: 100%;

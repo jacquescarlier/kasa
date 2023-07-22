@@ -1,8 +1,3 @@
-.footer .bottom {
- position: absolute;
-  bottom: 0 ;
-}
-
 .dropApropos {
   padding: 0;
   @include flex-justify-items-center;
@@ -21,6 +16,9 @@
 
     .dropdown {
       width: 100%;
+      /*margin-top: 40px;*/
+      position: relative;
+      top: 0px;
 
 
       .dropdownInitial {
@@ -46,7 +44,7 @@
 
       .open {
         max-height: 1000px;
-        odisplay: flex;
+       /* display: flex;*/
         transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
       }
 

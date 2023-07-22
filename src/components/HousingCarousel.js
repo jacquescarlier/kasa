@@ -1,18 +1,19 @@
 import React, { useState } from "react"
 import ArrowRight from "../pictures/arrow_forward.png"
 import ArrowLeft from "../pictures/arrow_back.png"
-
 import useHousingTable from "./UseHousingTable"
-
 function Carrousel() {
     const logement = useHousingTable();
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const pictureCounter = `${currentImageIndex + 1} / ${logement.pictures.length}`
+    const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
+    const pictureCounter = `${currentPictureIndex + 1} / ${logement.pictures.length}`
     const nextImage = () => {
-        setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
+        setcurrentPictureIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
     };
+    console.log("pictureCounter", pictureCounter)
+    console.log("length", logement.pictures.length)
+    console.log("currentIndex", currentPictureIndex)
     const previousImage = () => {
-        setCurrentImageIndex((prevIndex) => {
+        setcurrentPictureIndex((prevIndex) => {
             if (prevIndex === 0) {
                 return logement.pictures.length - 1;
             } else {
@@ -20,17 +21,20 @@ function Carrousel() {
             }
         });
     }
-    const currentImage = logement.pictures[currentImageIndex]
+    const currentPicture = logement.pictures[currentPictureIndex]
     if (logement.pictures.length === 1) {
         return (
             <section className="carrousel">
-                <img src={currentImage} alt="logement" className="carrouselImg" />
+                <img src={currentPicture} alt="logement" className="carrouselPicture" />
             </section>
         );
     }
+    console.log("logement",logement)
+
+
     return (
         <section className="carrousel">
-            <img src={currentImage} alt="logement" className="carrouselImg" />
+            <img src={currentPicture} alt="logement" className="carrouselPicture" />
             <img src={ArrowRight} alt="Fléche droite " onClick={nextImage} className="carrouselArrow carrouselArrowRight "></img>
             <img src={ArrowLeft} alt='Fléche gauche' onClick={previousImage} className="carrouselArrow carrouselArrowLeft"></img>
             <div className="carrouselCounter"> {pictureCounter}</div>

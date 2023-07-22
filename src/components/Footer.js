@@ -2,7 +2,7 @@ import logoKasa from "../pictures/LogoKasa.png"
 
 function Footer() {
   return (
-    <footer >
+    <footer>
       <img src={logoKasa} alt="logo kasa" />
       <p>©2020 Kasa. All rights reserved</p>
     </footer>

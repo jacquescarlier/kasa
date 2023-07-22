@@ -6,13 +6,13 @@ function Carrousel() {
     const logement = useHousingTable();
     const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
     const pictureCounter = `${currentPictureIndex + 1} / ${logement.pictures.length}`
-    const nextImage = () => {
+    const nextPicture = () => {
         setcurrentPictureIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
     };
     console.log("pictureCounter", pictureCounter)
     console.log("length", logement.pictures.length)
     console.log("currentIndex", currentPictureIndex)
-    const previousImage = () => {
+    const previousPicture = () => {
         setcurrentPictureIndex((prevIndex) => {
             if (prevIndex === 0) {
                 return logement.pictures.length - 1;
@@ -35,8 +35,8 @@ function Carrousel() {
     return (
         <section className="carrousel">
             <img src={currentPicture} alt="logement" className="carrouselPicture" />
-            <img src={ArrowRight} alt="Fléche droite " onClick={nextImage} className="carrouselArrow carrouselArrowRight "></img>
-            <img src={ArrowLeft} alt='Fléche gauche' onClick={previousImage} className="carrouselArrow carrouselArrowLeft"></img>
+            <img src={ArrowRight} alt="Fléche droite " onClick={nextPicture} className="carrouselArrow carrouselArrowRight "></img>
+            <img src={ArrowLeft} alt='Fléche gauche' onClick={previousPicture} className="carrouselArrow carrouselArrowLeft"></img>
             <div className="carrouselCounter"> {pictureCounter}</div>
         </section>
     )

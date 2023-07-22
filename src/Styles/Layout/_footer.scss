@@ -7,8 +7,6 @@ footer {
   @include flex-justify-items-center;
   flex-direction: column;
   row-gap: 30px;
-  /*position: fixed;
-  bottom: 0;*/
 
   @include tab {
     gap: 0px;

@@ -6,21 +6,19 @@ function Carrousel() {
     const logement = useHousingTable();
     const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
     const pictureCounter = `${currentPictureIndex + 1} / ${logement.pictures.length}`
+    
     const nextPicture = () => {
         setcurrentPictureIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
     };
-    console.log("pictureCounter", pictureCounter)
-    console.log("length", logement.pictures.length)
-    console.log("currentIndex", currentPictureIndex)
-    const previousPicture = () => {
-        setcurrentPictureIndex((prevIndex) => {
-            if (prevIndex === 0) {
-                return logement.pictures.length - 1;
-            } else {
-                return (prevIndex - 1) % logement.pictures.length;
-            }
-        });
-    }
+  
+    const previousPicture = () =>{
+        setcurrentPictureIndex((prevIndex)=>(prevIndex - 1 + logement.pictures.length ) % logement.pictures.length) 
+};
+
+console.log("pictureCounter", pictureCounter)
+console.log("length", logement.pictures.length)
+console.log("currentIndex", currentPictureIndex)
+
     const currentPicture = logement.pictures[currentPictureIndex]
     if (logement.pictures.length === 1) {
         return (
@@ -29,8 +27,6 @@ function Carrousel() {
             </section>
         );
     }
-    console.log("logement", logement)
-
 
     return (
         <section className="carrousel">

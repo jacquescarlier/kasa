@@ -1,53 +1,55 @@
 ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+
+  @include tab {
+    gap: 10px;
+  }
+
+  li {
+    color: #FF6080;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: right;
 
     @include tab {
-        gap: 10px;
+      font-size: 12px;
     }
+  }
 
-    li {
-        color: #FF6080;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 34px;
-        text-align: right;
-
-        @include tab {
-            font-size: 12px;
-        }
-    }
-
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
+
 .nav-active {
-    position: relative;
+  position: relative;
 
-    &::after {
-      content: "";
-      height: 2px;
-      width: 0;
-      background: $primary-color;
-      position: absolute;
-      border-radius: 10px;
-      bottom: 0px;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-animation: anim 0.3s ease forwards;
-      animation: anim 0.6s ease forwards;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: $primary-color;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-animation: anim 0.3s ease forwards;
+    animation: anim 0.6s ease forwards;
 
-      @-webkit-keyframes anim {
-        to {
-          width: 100%;
-        }
+    @-webkit-keyframes anim {
+      to {
+        width: 100%;
       }
-      @keyframes anim {
-        to {
-          width: 100%;
-        }
+    }
+
+    @keyframes anim {
+      to {
+        width: 100%;
       }
     }
   }
+}

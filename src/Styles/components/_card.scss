@@ -5,14 +5,15 @@
 .card {
   background-color: $card-color;
   border-radius: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 50px 4.86%;
 
   @include tab {
     background-color: $neutral-color;
     padding: 0;
     margin: 0;
-  } 
+  }
+
   .card-style {
     @include flex-row-justify;
     gap: 45px;
@@ -21,11 +22,13 @@
     @include desktop-large {
       gap: 25px;
     }
+
     @include tab {
       gap: 20px;
       padding: 0;
       margin: 0;
     }
+
     .card-div {
       width: 30%;
       height: 340px;
@@ -48,11 +51,9 @@
 
       &::before {
         content: "";
-        background: linear-gradient(
-          180deg,
-          rgba(255, 96, 96, 0.1195071779) 74%,
-          rgba(45, 21, 21, 0.3071822479) 90%
-        );
+        background: linear-gradient(180deg,
+            rgba(255, 96, 96, 0.1195071779) 74%,
+            rgba(45, 21, 21, 0.3071822479) 90%);
         position: absolute;
         width: 100%;
         height: 100%;

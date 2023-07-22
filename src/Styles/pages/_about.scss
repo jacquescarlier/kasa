@@ -4,27 +4,29 @@
 }
 
 #enveloppe-contenu {
-  padding-bottom: 2.5rem;    /* Hauteur du pied-de-page */
+  padding-bottom: 2.5rem;
+  /* Hauteur du pied-de-page */
 }
 
 #pied-de-page {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Hauteur du pied-de-page */
+  height: 2.5rem;
+  /* Hauteur du pied-de-page */
 }
 
 
 .dropApropos {
   padding: 0;
   @include flex-justify-items-center;
-  
+
 
   .drop-apropos {
     width: 80%;
     @include flex-column-justify-center;
     gap: 30px;
-    
+
 
     @include tab {
       width: 100%;
@@ -61,7 +63,7 @@
 
       .open {
         max-height: 1000px;
-       /* display: flex;*/
+        /* display: flex;*/
         transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
       }
 

@@ -1,6 +1,7 @@
-  html{
+  html {
     min-height: 100%;
   }
+
   body {
     width: 100vw;
     height: 100vh;
@@ -10,7 +11,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-  
+
   container-general {
     width: 100%;
     margin: auto;
@@ -21,9 +22,9 @@
     @include desktop-large {
       padding: 40px 3.5%;
     }
+
     @include tab {
       padding: 10px 3.5%;
     }
-    
+
   }
-  

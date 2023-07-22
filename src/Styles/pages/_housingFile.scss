@@ -1,64 +1,71 @@
-
 .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: normal;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    color: #FF6060;
-    padding: 30px 0px;
-  }
-  .titleInfo {
-    width: 70%;
-  }
-  .title h1 {
-    font-size: 51px;
-    font-weight: 300;
-    line-height: 50px;
-    padding-bottom: 10px;
-  }
-  .title p {
-    font-size: 18px;
-  }
-  .title img {
-    border-radius: 50%;
-    object-fit: cover;
-    width: 64px;
-  }
-  .titleName {
-    display: flex;
-    flex-direction: row;
-    justify-content: normal;
-    height: 64px;
-    align-items: center;
-  }
-  .titleName p {
-    width: 90px;
-  }
-  
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #FF6060;
+  padding: 30px 0px;
+}
+
+.titleInfo {
+  width: 70%;
+}
+
+.title h1 {
+  font-size: 51px;
+  font-weight: 300;
+  line-height: 50px;
+  padding-bottom: 10px;
+}
+
+.title p {
+  font-size: 18px;
+}
+
+.title img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 64px;
+}
+
+.titleName {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  height: 64px;
+  align-items: center;
+}
+
+.titleName p {
+  width: 90px;
+}
+
+
 .retail {
-    display: flex;
-    flex-direction: row;
-    justify-content: normal;
-    justify-content: space-between;
-    width: 50%;
-  }
-  .retailTagline {
-    display: flex;
-    flex-direction: row;
-    justify-content: normal;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .retail p {
-    color: white;
-    background-color: #FF6060;
-    padding: 5px 40px;
-    border-radius: 20px;
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.retailTagline {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.retail p {
+  color: white;
+  background-color: #FF6060;
+  padding: 5px 40px;
+  border-radius: 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}

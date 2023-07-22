@@ -29,7 +29,7 @@ function Carrousel() {
             </section>
         );
     }
-    console.log("logement",logement)
+    console.log("logement", logement)
 
 
     return (

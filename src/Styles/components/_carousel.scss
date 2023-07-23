@@ -13,6 +13,10 @@
   object-fit: cover;
   z-index: 1;
   border-radius: 20px;
+
+  @include tab {
+    height: 255px;
+  }
 }
 
 .carouselArrow {
@@ -22,6 +26,18 @@
   width: 96px;
   height: 120px;
   cursor: pointer;
+
+  @include desktop {
+    bottom: 40%;
+    height: 72px;
+    width: 72px;
+  }
+
+  @include tab {
+    bottom: 45%;
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .carouselArrowRight {
@@ -40,4 +56,8 @@
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -2px;
+
+  @include tab {
+    display: none;
+  }
 }

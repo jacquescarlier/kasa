@@ -35,6 +35,10 @@
         color: $primary-color;
         text-decoration: underline #FF6060;
 
+        @include tab {
+            font-size: 16px;
+        }
+
         @include phone {
           font-size: 14px;
         }

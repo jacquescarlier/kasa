@@ -87,11 +87,15 @@
         font-size: 18px;
         font-weight: 500;
         font-family: "Montserrat", sans-serif;
-        width: 60%;
+        width: 65%;
         height: 10%;
         display: flex;
         align-items: flex-end;
         margin: 0;
+        
+        @include tab {
+          width : 80%
+        }
       }
     }
   }

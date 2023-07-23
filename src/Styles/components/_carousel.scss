@@ -33,8 +33,14 @@
     width: 72px;
   }
 
-  @include phone {
+  @include tab {
     bottom: 45%;
+    height: 36px;
+    width: 36px;
+  }
+
+  @include phone {
+    bottom: 48%;
     height: 24px;
     width: 24px;
   }

@@ -18,6 +18,10 @@ footer {
     font-size: 24px;
     text-align: center;
 
+    @include tab {
+      font-size: 18px;
+    }
+
     @include phone {
       width: 122px;
       font-size: 12px;

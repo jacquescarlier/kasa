@@ -1,8 +1,15 @@
 $breakpoint: (
+  "phone": 576px,
   "tab": 768px,
   "desktop": 1024px,
   "desktop-large": 1240px,
 );
+
+@mixin phone {
+  @media screen and (max-width: map-get($breakpoint, phone)) {
+    @content;
+  }
+}
 
 @mixin tab {
   @media screen and (max-width: map-get($breakpoint, tab)) {

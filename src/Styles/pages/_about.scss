@@ -27,8 +27,11 @@
     @include flex-column-justify-center;
     gap: 30px;
 
-
     @include tab {
+      width: 90%;
+    }
+
+    @include phone {
       width: 100%;
     }
 

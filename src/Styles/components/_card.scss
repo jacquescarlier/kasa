@@ -9,6 +9,10 @@
   padding: 50px 4.86%;
 
   @include tab {
+    padding: 20px 2.5%;
+  }
+
+  @include phone {
     background-color: $neutral-color;
     padding: 0;
     margin: 0;
@@ -22,9 +26,12 @@
     @include desktop-large {
       gap: 25px;
     }
-
     @include tab {
       gap: 20px;
+    }
+
+    @include phone {
+      gap: 15px;
       padding: 0;
       margin: 0;
     }
@@ -36,7 +43,7 @@
       position: relative;
 
       @include desktop-large {
-        height: 255px;
+        height: 300px;
       }
 
       @include desktop {
@@ -45,6 +52,11 @@
       }
 
       @include tab {
+        height: 265px;
+        width: 100%;
+      }
+
+      @include phone {
         height: 255px;
         width: 100%;
       }

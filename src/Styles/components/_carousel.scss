@@ -14,7 +14,7 @@
   z-index: 1;
   border-radius: 20px;
 
-  @include tab {
+  @include phone {
     height: 255px;
   }
 }
@@ -33,7 +33,7 @@
     width: 72px;
   }
 
-  @include tab {
+  @include phone {
     bottom: 45%;
     height: 24px;
     width: 24px;
@@ -57,7 +57,7 @@
   font-weight: 500;
   letter-spacing: -2px;
 
-  @include tab {
+  @include phone {
     display: none;
   }
 }

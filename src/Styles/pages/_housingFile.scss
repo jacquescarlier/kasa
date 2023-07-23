@@ -19,7 +19,7 @@
   line-height: 50px;
   padding-bottom: 10px;
 
-  @include tab {
+  @include phone {
     font-size: 18px
   }
 }
@@ -27,7 +27,7 @@
  p {
   font-size: 18px;
 
-  @include tab {
+  @include phone {
     font-size: 14px;
   }
 }
@@ -79,6 +79,10 @@
   font-weight: 500;
 
     @include tab {
+      font-size: 12px;
+    }
+
+    @include phone {
       font-size: 10px;
       padding: 5px 10px;
     }

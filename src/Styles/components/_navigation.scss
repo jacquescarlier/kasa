@@ -3,7 +3,7 @@ ul {
   gap: 50px;
   list-style: none;
 
-  @include tab {
+  @include phone {
     gap: 20px;
   }
 
@@ -14,8 +14,11 @@ ul {
     line-height: 34px;
     text-align: right;
     
-
     @include tab {
+      font-size: 16px;
+    }
+
+    @include phone {
       font-size: 12px;
     }
   }

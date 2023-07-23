@@ -27,8 +27,8 @@ const HousingTitle = () => {
         <p> {logement.host.name} </p>
         <img src={logement.host.picture} alt={logement.host.name}></img>
       </div>
-      <div className="retail">
-        <div className='retailTagline'>
+      <div className="housingDetail">
+        <div className='housingInformation'>
           {logement.tags.map((tag, index) => (
             <p key={index}>{tag}</p>
           ))}

@@ -9,13 +9,24 @@
         font-weight: 700;
         color: $primary-color;
         margin: 8% 0;
+
+        @include tab {
+            font-size: 92px;
+            margin: 30% 0;
+        }
     }
 
     h2 {
         margin: 8% auto;
-        font-size: 38px;
+        font-size: 36px;
         font-weight: 500;
         color: $primary-color;
+
+        @include tab {
+            font-size: 18px;
+            margin: 0 0 30% 0;
+            width: 70%;
+        }
     }
 
     .goHome {
@@ -23,6 +34,10 @@
         font-size: 18px;
         color: $primary-color;
         text-decoration: underline #FF6060;
+
+        @include tab {
+          font-size: 14px;
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import logements from '../datas/logements.json'
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, } from "react-router-dom";
 import Dropdown from './Dropdown';
 
 
@@ -9,18 +9,15 @@ const HousingDropdown = () => {
     const { id } = useParams()
     const logement = logements.find((housing) => housing.id === id)
     const navigate = useNavigate();
-    console.log("id", id)
-    console.log("housing", logement)
     
     useEffect(() => {
+     
         if (!logement) {
             console.log("Logement non trouvé.404");
             navigate("/Page404");
         }
-    }, [logement, navigate]);
-    if (!logement) {
-        return null
-    }
+    }, [ ]);
+   
 
     return (
        

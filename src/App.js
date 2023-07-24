@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
 import HousingFile from "./pages/HousingFile";
 
+
 function App() {
   return (
     <div>
@@ -15,7 +16,7 @@ function App() {
           <Route path="/HousingFile/:id" element={<HousingFile />} />
           {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
           <Route path="*" element={<Page404 />} />
-          <Route path="/HousingFile/*" element={<Page404 />} />
+          <Route path="/HousingFile/:*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </div>

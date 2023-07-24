@@ -44,8 +44,7 @@
 }
 
 .titleName {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: normal;
   height: 64px;
   align-items: center;

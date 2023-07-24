@@ -8,11 +8,11 @@ footer {
   flex-direction: column;
   row-gap: 30px;
 
-  @include phone {
-    gap: 0px;
-   /* position: fixed;
-    bottom: 0;*/
-  }
+    @include phone {
+      gap: 0px;
+      /* position: fixed;
+       bottom: 0;*/
+    }
 
   p {
     font-size: 24px;

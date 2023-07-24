@@ -1,22 +1,3 @@
-#conteneur-page {
-  position: relative;
-  min-height: 100vh;
-}
-
-#enveloppe-contenu {
-  padding-bottom: 2.5rem;
-  /* Hauteur du pied-de-page */
-}
-
-#pied-de-page {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  /* Hauteur du pied-de-page */
-}
-
-
 .dropApropos {
   padding: 0;
   @include flex-justify-items-center;

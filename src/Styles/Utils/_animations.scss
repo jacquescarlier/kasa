@@ -1,5 +1,5 @@
 @mixin dropdownOpen {
-animation: dropdownTranslation 20s forwards ease-out;
+animation: dropdownTranslation 2s forwards ease-out;
 
     @keyframes dropdownTranslation{
        from{ 

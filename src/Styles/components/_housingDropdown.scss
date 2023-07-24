@@ -11,8 +11,10 @@
         width: 50%;
         display: flex;
         flex-flow: column wrap;
+        transition: all 5s ease-in;
 
         .dropdownInitial {
+            position: relative;
             @include flex-items-center;
             justify-content: space-between;
             padding: 10px;
@@ -21,8 +23,7 @@
             font-size: 18px;
             background-color: $primary-color;
             height: 50px;
-
-
+            
             .dropdownText {
                 font-size: 18px;
                 font-weight: 500;
@@ -37,6 +38,7 @@
             font-size: 18px;
             padding: 20px;
             line-height: 32px;
+            top: -100%;
 
             p {
                 font-size: 18px;
@@ -47,45 +49,39 @@
                 padding-top: 10px;
                 display: flex;
                 flex-direction: column;
-
+              
                 li {
                     text-align: left;
                     font-size: 18px;
                     font-style: 500;
                     line-height: 0px;
-                    
                 }
-
             }
-            
         }
     }
+
     .open {
         max-height: 100%;
-        @include dropdownOpen;
-       
-      }
+        display: block;
+    }
 
-      .close {
+    .close {
         max-height: 0px;
         display: none;
-        
-       
-      }
+    }
 
-      .arrow {
+    .arrow {
         width: 20px;
         height: 20px;
         transition: all 200ms ease-in-out;
         transform: rotate(0deg);
-      }
+    }
 
-      .rotated {
+    .rotated {
         width: 20px;
         height: 20px;
         transition: all 200ms ease-in-out;
         transform: rotate(180deg);
-      }
+    }
 
 }
-

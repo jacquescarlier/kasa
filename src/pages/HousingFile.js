@@ -1,14 +1,10 @@
-
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HousingCarousel from "../components/HousingCarousel";
 import HousingTitle from "../components/HousingDetail";
-import HousingValidity from "../components/HousingValidity";
-
-
+import HousingDropdown from "../components/HousingDropdown";
 
 const HousingFile = () => {
-
 
   return (
     <div>
@@ -16,7 +12,7 @@ const HousingFile = () => {
         <Header />
         <HousingCarousel />
         <HousingTitle />
-        <HousingValidity />
+        <HousingDropdown />
       </container-general>
       <Footer />
     </div>

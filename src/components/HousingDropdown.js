@@ -5,10 +5,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import Dropdown from './Dropdown';
 
 
-const HousingValidity = () => {
+const HousingDropdown = () => {
     const { id } = useParams()
-    const logement = logements.find((item) => item.id === id)
+    const logement = logements.find((housing) => housing.id === id)
     const navigate = useNavigate();
+    console.log("id", id)
+    console.log("housing", logement)
+    
     useEffect(() => {
         if (!logement) {
             console.log("Logement non trouvé.404");
@@ -21,7 +24,7 @@ const HousingValidity = () => {
 
     return (
        
-           <section className="housingValidity">
+           <section className="housingDropdown">
                 
                 <Dropdown text="Description">
                     <p>{logement.description}</p>
@@ -37,4 +40,4 @@ const HousingValidity = () => {
     );
 };
 
-export default HousingValidity;
+export default HousingDropdown;

@@ -3,6 +3,7 @@
 @import './Bases/reset';
 @import './Bases/setting';
 @import './Utils/flex';
+@import './Utils/animations';
 @import './components/navigation';
 @import './Layout/header';
 @import './components/banner';
@@ -12,4 +13,4 @@
 @import './pages/about';
 @import './components/carousel';
 @import './pages/HousingFile';
-@import './components/housingValidity';
+@import './components/housingDropdown';

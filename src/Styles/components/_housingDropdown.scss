@@ -1,4 +1,4 @@
-.housingValidity {
+.housingDropdown {
     width: 100%;
     padding: 30px 0px;
     display: flex;
@@ -22,6 +22,7 @@
             background-color: $primary-color;
             height: 50px;
 
+
             .dropdownText {
                 font-size: 18px;
                 font-weight: 500;
@@ -30,6 +31,7 @@
 
         .dropdownContent {
             overflow: hidden;
+            border-radius: 0px 0px 10px 10px;
             background-color: $card-color;
             color: $primary-color;
             font-size: 18px;
@@ -42,7 +44,7 @@
             }
 
             ul {
-                padding-top: 20px;
+                padding-top: 10px;
                 display: flex;
                 flex-direction: column;
 
@@ -59,15 +61,16 @@
         }
     }
     .open {
-        max-height: 1000px;
-        /* display: flex;*/
-        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
+        max-height: 100%;
+        @include dropdownOpen;
+       
       }
 
       .close {
         max-height: 0px;
         display: none;
-        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
+        
+       
       }
 
       .arrow {
@@ -85,3 +88,4 @@
       }
 
 }
+

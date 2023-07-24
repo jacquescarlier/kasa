@@ -7,9 +7,7 @@ import Dropdown from './Dropdown';
 
 const HousingValidity = () => {
     const { id } = useParams()
-    console.log("id:", id);
     const logement = logements.find((item) => item.id === id)
-    console.log("logement", logement)
     const navigate = useNavigate();
     useEffect(() => {
         if (!logement) {
@@ -22,18 +20,20 @@ const HousingValidity = () => {
     }
 
     return (
-        <div>
-            <section className="drop">
-                    <Dropdown text="Description">
-                        <p>{logement.description}</p>
-                    </Dropdown>
-                    <Dropdown text="Equipement">
-                        {<ul>{logement.equipments.map((equipement) =>
-                            <li key={equipement}>{equipement}</li>)}
-                        </ul>}
-                    </Dropdown>
-                </section>
-        </div>
+       
+           <section className="housingValidity">
+                
+                <Dropdown text="Description">
+                    <p>{logement.description}</p>
+                </Dropdown>
+                <Dropdown text="Equipement">
+                    {<ul>{logement.equipments.map((equipement) =>
+                        <li key={equipement}>{equipement}</li>)}
+                    </ul>}
+                </Dropdown>
+                
+                    </section>
+        
     );
 };
 

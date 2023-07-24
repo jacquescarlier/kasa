@@ -1,22 +1,9 @@
-
-import starActive from "../pictures/star-active 1.png"
-import starInactive from "../pictures/star-inactive 1.png"
+import Stars from "./Stars";
 import useHousingTable from "./UseHousingTable"
 
 const HousingTitle = () => {
   const logement = useHousingTable();
-  const rating = logement.rating;
-  const maxRating = 5;
-  const stars = [];
-  for (let i = 1; i <= maxRating; i++) {
-    stars.push(
-      <img
-        key={i}
-        src={i <= rating ? starActive : starInactive}
-        alt={i <= rating ? "Active star" : "Inactive Star "}
-      />
-    )
-  }
+
   return (
     <section className="title" >
       <div className='titleInfo'>
@@ -33,8 +20,8 @@ const HousingTitle = () => {
             <p key={index}>{tag}</p>
           ))}
         </div >
+        <Stars />
       </div>
-      <div className="star"> {stars}</div>
     </section>
   )
 }

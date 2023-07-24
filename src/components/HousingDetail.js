@@ -1,8 +1,8 @@
 import Stars from "./Stars";
-import useHousingTable from "./UseHousingTable"
+import HousingTable from "./HousingTable"
 
 const HousingTitle = () => {
-  const logement = useHousingTable();
+  const logement = HousingTable();
 
   return (
     <section className="title" >

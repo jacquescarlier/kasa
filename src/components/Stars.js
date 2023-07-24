@@ -1,10 +1,10 @@
 import starActive from "../pictures/star-active 1.png"
 import starInactive from "../pictures/star-inactive 1.png"
-import useHousingTable from "./UseHousingTable"
+import HousingTable from "./HousingTable"
 
 const Stars = () => {
 
-    const logement = useHousingTable();
+    const logement = HousingTable();
     const rating = logement.rating;
     const maxRating = 5;
     const stars = [];

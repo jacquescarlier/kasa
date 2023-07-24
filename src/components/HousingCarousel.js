@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import ArrowRight from "../pictures/arrow_forward.png"
 import ArrowLeft from "../pictures/arrow_back.png"
-import useHousingTable from "./UseHousingTable"
+import HousingTable from "./HousingTable"
 
 function Carousel() {
-    const logement = useHousingTable();
+    const logement = HousingTable();
     const pictureLength = logement.pictures.length;
     const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
     const pictureCounter = `${currentPictureIndex + 1} / ${pictureLength}`

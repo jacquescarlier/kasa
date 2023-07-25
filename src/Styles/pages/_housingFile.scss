@@ -5,7 +5,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  color: #FF6060;
+  color: #ff6060;
   padding: 0px 0px 15px 0px;
 
   @include tab {
@@ -21,43 +21,43 @@
     width: 100%;
     font-size: 16px;
   }
-  
- h1 {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 50px;
-  padding-bottom: 10px;
 
-  @include phone {
-    font-size: 18px
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+    padding-bottom: 10px;
+
+    @include phone {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+
+    @include tab {
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
   }
 }
 
- p {
-  font-size: 18px;
-
-  @include tab {
-    font-size: 16px;
-  }
-
-  @include phone {
-    font-size: 14px;
-  }
-}
-}
 .title img {
   border-radius: 50%;
   object-fit: cover;
   width: 64px;
 
   @include tab {
-    width: 48px
+    width: 48px;
   }
 
   @include phone {
     width: 32px;
   }
-
 }
 
 .titleName {
@@ -76,22 +76,21 @@
     height: 32px;
   }
 }
+
 .titleName p {
   font-size: 18px;
-  width: 93px;
   padding: 0 10px;
+  text-align: right;
+  width: 93px;
 
   @include tab {
     font-size: 16px;
-    padding: 0 8px;
   }
 
   @include phone {
     font-size: 12px;
-    padding: 0 6px;
   }
 }
-
 
 .housingDetail {
   display: flex;
@@ -113,25 +112,23 @@
   gap: 15px;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .housingDetail p {
   color: white;
-  background-color: #FF6060;
+  background-color: #ff6060;
   padding: 5px 20px;
   border-radius: 20px;
   display: block;
   font-size: 14px;
   font-weight: 500;
 
-    @include tab {
-      font-size: 12px;
-    }
+  @include tab {
+    font-size: 12px;
+  }
 
-    @include phone {
-      font-size: 10px;
-      padding: 5px 10px;
-    }
+  @include phone {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 }
-

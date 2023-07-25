@@ -2,14 +2,14 @@ import starActive from "../pictures/star-active 1.png"
 import starInactive from "../pictures/star-inactive 1.png"
 import HousingTable from "./HousingTable"
 
-const Stars = () => {
+const Star = () => {
 
     const logement = HousingTable();
     const rating = logement.rating;
     const maxRating = 5;
-    const stars = [];
+    const star = [];
     for (let i = 1; i <= maxRating; i++) {
-        stars.push(
+        star.push(
             <img
                 key={i}
                 src={i <= rating ? starActive : starInactive}
@@ -19,10 +19,8 @@ const Stars = () => {
     }
 
     return (
-        <div>
-            <div className="star"> {stars}</div>
-        </div>
+            <div className="star"> {star}</div>
     );
 };
 
-export default Stars;
+export default Star;

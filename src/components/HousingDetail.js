@@ -1,4 +1,4 @@
-import Stars from "./Stars";
+import Star from "./Star";
 import HousingTable from "./HousingTable"
 
 const HousingTitle = () => {
@@ -20,8 +20,8 @@ const HousingTitle = () => {
             <p key={index}>{tag}</p>
           ))}
         </div >
-        <Stars />
       </div>
+      <Star />
     </section>
   )
 }

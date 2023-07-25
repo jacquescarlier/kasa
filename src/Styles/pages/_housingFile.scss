@@ -7,13 +7,21 @@
   width: 100%;
   color: #FF6060;
   padding: 0px 0px 15px 0px;
+
+  @include tab {
+    width: 100%;
+  }
 }
 
 .titleInfo {
   width: 70%;
   padding: 0 0 15px 0;
 
-
+  @include tab {
+    width: 100%;
+    font-size: 16px;
+  }
+  
  h1 {
   font-size: 36px;
   font-weight: 500;
@@ -41,6 +49,15 @@
   border-radius: 50%;
   object-fit: cover;
   width: 64px;
+
+  @include tab {
+    width: 48px
+  }
+
+  @include phone {
+    width: 32px;
+  }
+
 }
 
 .titleName {
@@ -48,11 +65,31 @@
   justify-content: normal;
   height: 64px;
   align-items: center;
-}
 
+  @include tab {
+    order: 4;
+    min-width: auto;
+    height: 48px;
+  }
+
+  @include tab {
+    height: 32px;
+  }
+}
 .titleName p {
   font-size: 18px;
-  width: 90px;
+  width: 93px;
+  padding: 0 10px;
+
+  @include tab {
+    font-size: 16px;
+    padding: 0 8px;
+  }
+
+  @include phone {
+    font-size: 12px;
+    padding: 0 6px;
+  }
 }
 
 
@@ -61,7 +98,12 @@
   flex-flow: row nowrap;
   justify-content: normal;
   justify-content: space-between;
-  width: 100%;
+  width: 70%;
+
+  @include tab {
+    width: 100%;
+    padding: 20px 0;
+  }
 }
 
 .housingInformation {
@@ -71,6 +113,7 @@
   gap: 15px;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .housingDetail p {
@@ -91,3 +134,4 @@
       padding: 5px 10px;
     }
 }
+

@@ -1,0 +1,26 @@
+
+ .title .star {
+    display: flex;
+    width: 15%;
+    height: 36px;
+    align-items: center;
+    justify-content: flex-end;
+
+      @include tab {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+      }
+    
+
+    .img {
+      height: 36px;
+      width: 36px;
+      padding: 6px 10px;
+
+      @include tab {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }

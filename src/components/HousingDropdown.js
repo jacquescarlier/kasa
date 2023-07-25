@@ -16,7 +16,7 @@ const HousingDropdown = () => {
             console.log("Logement non trouvé.404");
             navigate("/Page404");
         }
-    }, [ ]);
+    }, [logement, navigate]);
    
 
     return (

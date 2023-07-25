@@ -2,7 +2,6 @@
   padding: 0;
   @include flex-justify-items-center;
 
-
   .drop-apropos {
     width: 80%;
     @include flex-column-justify-center;
@@ -16,23 +15,21 @@
       width: 100%;
     }
 
-
     .dropdown {
       width: 100%;
       /*margin-top: 40px;*/
       position: relative;
       top: 0px;
 
-
-      .dropdownInitial {
+      .dropdownTitle {
+        height: 50px;
         @include flex-items-center;
         justify-content: space-between;
-        padding: 10px;
+        background-color: $primary-color;
         border-radius: 10px;
         color: white;
         font-size: 18px;
-        background-color: $primary-color;
-        height: 50px;
+        padding: 10px;
       }
 
       .dropdownContent {
@@ -40,34 +37,34 @@
         background-color: $card-color;
         color: $primary-color;
         font-size: 18px;
-        padding: 20px;
         font-weight: 500;
         line-height: 25px;
+        padding: 20px;
+        transition: all 2s ease-in-out ease-in-out;
       }
 
       .open {
         max-height: 1000px;
-        /* display: flex;*/
-        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
+        transition: all 2s ease-in-out ease-in-out;
+        transform: translateY(-10px);
       }
 
       .close {
         max-height: 0px;
         display: none;
-        transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in-out;
       }
 
       .arrow {
         width: 20px;
         height: 20px;
-        transition: all 200ms ease-in-out;
+        transition: all 300ms ease-in-out;
         transform: rotate(0deg);
       }
 
       .rotated {
         width: 20px;
         height: 20px;
-        transition: all 200ms ease-in-out;
+        transition: all 300ms ease-in-out;
         transform: rotate(180deg);
       }
     }

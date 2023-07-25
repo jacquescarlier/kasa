@@ -1,51 +1,50 @@
 .page404 {
-    width: 100%;
-    @include flex-column;
-    @include flex-justify-items-center;
+  width: 100%;
+  @include flex-column;
+  @include flex-justify-items-center;
 
+  h1 {
+    font-size: 250px;
+    font-weight: 700;
+    color: $primary-color;
+    margin: 8% 0;
 
-    h1 {
-        font-size: 250px;
-        font-weight: 700;
-        color: $primary-color;
-        margin: 8% 0;
+    @include phone {
+      font-size: 92px;
+      margin: 30% 0;
+    }
+  }
 
-        @include phone {
-            font-size: 92px;
-            margin: 30% 0;
-        }
+  h2 {
+    color: $primary-color;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 8% auto;
+
+    @include phone {
+      font-size: 18px;
+      margin: 0 0 30% 0;
+      width: 70%;
+    }
+  }
+
+  .goHome {
+    color: $primary-color;
+    font-size: 18px;
+    margin: 8% auto;
+    text-decoration: underline #ff6060;
+
+    @include tab {
+      font-size: 16px;
     }
 
-    h2 {
-        margin: 8% auto;
-        font-size: 36px;
-        font-weight: 500;
-        color: $primary-color;
-
-        @include phone {
-            font-size: 18px;
-            margin: 0 0 30% 0;
-            width: 70%;
-        }
+    @include phone {
+      font-size: 14px;
     }
-
-    .goHome {
-        margin: 8% auto;
-        font-size: 18px;
-        color: $primary-color;
-        text-decoration: underline #FF6060;
-
-        @include tab {
-            font-size: 16px;
-        }
-
-        @include phone {
-          font-size: 14px;
-        }
-    }
+  }
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
+  position: fixed;
+  bottom: 0;
 }

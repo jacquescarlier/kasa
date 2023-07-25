@@ -1,31 +1,31 @@
 .header {
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  @include phone {
+    height: 57px;
+  }
+
+  img {
     height: 68px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    width: 210px;
+    object-fit: contain;
+    padding: 5px;
+    align-items: center;
 
     @include phone {
-        height: 57px;
+      height: 57px;
+      width: 145px;
     }
+  }
 
-    img {
-        height: 68px;
-        width: 210px;
-        object-fit: contain;
-        padding: 5px;
-        align-items: center;
+  .navigation {
+    padding: 20px 0px;
 
-        @include phone {
-            height: 57px;
-            width: 145px;
-        }
+    @include phone {
+      padding: 10px 0px;
     }
-
-    .navigation {
-        padding: 20px 0px;
-
-        @include phone {
-            padding: 10px 0px;
-        }
-    }
+  }
 }

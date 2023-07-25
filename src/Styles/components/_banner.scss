@@ -1,47 +1,47 @@
 .image-banner {
-    padding: 20px 0px 40px;
-    position: relative;
+  padding: 20px 0px 40px;
+  position: relative;
+
+  @include phone {
+    padding: 20px 0;
+  }
+
+  img {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(0.6);
+
+    @include tab {
+      height: 176px;
+    }
 
     @include phone {
-        padding: 20px 0;
+      height: 111px;
+    }
+  }
+
+  .banner-text {
+    width: 100%;
+    position: absolute;
+    bottom: 45%;
+    color: $neutral-color;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+
+    @include tab {
+      font-size: 30px;
     }
 
-    img {
-        height: 223px;
-        width: 100%;
-        border-radius: 25px;
-        object-fit: cover;
-        filter: brightness(0.6);
-
-        @include tab {
-            height: 176px;
-        }
-
-        @include phone {
-            height: 111px;
-        }
+    @include phone {
+      width: 65%;
+      bottom: 30%;
+      font-size: 24px;
+      text-align: left;
+      margin-left: 15px;
     }
-
-    .banner-text {
-        position: absolute;
-        bottom: 45%;
-        font-size: 48px;
-        color: $neutral-color;
-        font-weight: 500;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-
-        @include tab {
-            font-size: 30px;
-        }
-
-        @include phone {
-            width: 65%;
-            bottom: 30%;
-            font-size: 24px;
-            text-align: left;
-            margin-left: 15px;
-        }
-    }
+  }
 }

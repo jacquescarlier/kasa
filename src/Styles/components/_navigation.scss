@@ -8,12 +8,12 @@ ul {
   }
 
   li {
-    color: #FF6080;
+    color: #ff6080;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     text-align: right;
-    
+
     @include tab {
       font-size: 16px;
     }
@@ -37,8 +37,8 @@ ul {
     height: 2px;
     width: 0;
     background: $primary-color;
-    position: absolute;
     border-radius: 10px;
+    position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);

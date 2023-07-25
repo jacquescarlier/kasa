@@ -10,7 +10,7 @@ function Dropdown({ children, text }) {
   };
   return (
     <div className="dropdown">
-      <div className="dropdownInitial">
+      <div className="dropdownTitle">
         <p className="dropdownText">{text}</p>
         <img
           onClick={handleClick}

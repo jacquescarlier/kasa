@@ -1,6 +1,5 @@
 .title {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: normal;
   justify-content: space-between;
   flex-wrap: wrap;

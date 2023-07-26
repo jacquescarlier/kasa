@@ -15,11 +15,9 @@ const Accordion = ({ title, content }) => {
                 <div className="dropdownTitle">{title}</div>
                 <div> <img onClick={handleClick}
                     src={Arrow}
-                    alt="Fléche pour afficher le description"
+                    alt="Fléche pour afficher la description"
                     className={isRotated ? "rotated" : "arrow"} />
-
                 </div>
-
             </div>
             {isActive && <div className="accordion-content">{content}</div>}
         </div>

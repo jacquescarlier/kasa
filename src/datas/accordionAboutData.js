@@ -1,22 +1,27 @@
-export const accordionData = [{
+export const accordionData = [
+    {
+    id: 1,
     title: "Fiabilité",
     content: `Les annonces postées sur Kasa garantissent une fiabilité totale.
     Les photos sont conformes aux logements, et toutes les
     informations sont régulièrement vérifiées par nos équipes.`
 },
 {
+    id: 2,
     title: "Respect",
     content: `La bienveillance fait partie des valeurs fondatrices de Kasa.
     Tout comportement discriminatoire ou de perturbation du
     voisinage entraînera une exclusion de notre plateforme.`
 },
 {
+    id: 3,
     title: "Service",
     content: `La bienveillance fait partie des valeurs fondatrices de Kasa.
     Tout comportement discriminatoire ou de perturbation du
     voisinage entraînera une exclusion de notre plateforme.`
 },
 {
+    id: 4,
     title: "Sécurité",
     content: `La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
     que pour les voyageurs, chaque logement correspond aux critères
@@ -27,4 +32,4 @@ export const accordionData = [{
     hôtes.`
 }
 
-]
+];

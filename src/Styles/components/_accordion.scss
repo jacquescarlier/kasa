@@ -51,6 +51,15 @@
         padding: 20px;
         position: relative;
         top: -10px;
+        max-height: 1000px;
+        transform: translatey();
+        animation-name: accordion  4000ms;
+      }
+      @keyframes accordion {
+      to {
+          opacity: 1;
+          transform: translatey(max-height);
+        }
       }
 
       .arrow {

@@ -11,13 +11,15 @@ const Accordion = ({ title, content }) => {
 
     return (
         <div className="accordion-item">
-            <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+            <div className="accordion-title" onClick={handleClick}>
                 <div className="dropdownTitle">{title}</div>
-                <div> <img onClick={handleClick}
+                <div> <img 
                     src={Arrow}
-                    alt="Fléche pour afficher la description"
+                    alt="Fléche pour afficher le description"
                     className={isRotated ? "rotated" : "arrow"} />
+
                 </div>
+
             </div>
             {isActive && <div className="accordion-content">{content}</div>}
         </div>

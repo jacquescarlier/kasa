@@ -12,12 +12,12 @@ container-general {
   width: 100%;
   max-width: 1900px;
   margin: auto;
-  padding: 40px 6.95%;
+  padding: 45px 6.95% 22px 6.95%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 
   @include desktop-large {
-    padding: 40px 2.67%;
+    padding: 20px 2.67%;
   }
 
   @include phone {

@@ -10,7 +10,7 @@ function Card() {
         <Link
           to={`/HousingFile/${logement.id}`}
           key={logement.id}
-          className="card-div"
+          className="card"
         >
           <img src={logement.cover} alt={logement.title}></img>
           <p className="card-title">{logement.title}</p>

@@ -1,10 +1,8 @@
 .image-banner {
-  padding: 20px 0px 40px;
+  padding: 0;
   position: relative;
+  margin-bottom: 38px;
 
-  @include phone {
-    padding: 20px 0;
-  }
 
   img {
     height: 223px;
@@ -25,7 +23,8 @@
   .banner-text {
     width: 100%;
     position: absolute;
-    bottom: 45%;
+    bottom: 50%;
+    transform: translatey(50%);
     color: $neutral-color;
     font-size: 48px;
     font-weight: 500;
@@ -38,7 +37,6 @@
 
     @include phone {
       width: 65%;
-      bottom: 30%;
       font-size: 24px;
       text-align: left;
       margin-left: 15px;

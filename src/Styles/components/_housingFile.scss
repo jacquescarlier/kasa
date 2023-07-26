@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   width: 100%;
   color: #ff6060;
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 20px 0px;
 
   /*@include tab {
     width: 100%;
@@ -34,6 +34,7 @@
 
   p {
     font-size: 18px;
+    font-weight: 500;
 
     @include tab {
       font-size: 16px;

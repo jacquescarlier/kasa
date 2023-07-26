@@ -1,12 +1,22 @@
 .accordionSection {
+  border-radius: 10px;
   padding: 0;
-  @include flex-justify-items-center;
+  /*@include flex-justify-items-center;*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+
+  @include tab {
+    flex-wrap: wrap;
+  }
 
   .accordionBody {
     width: 80%;
     @include flex-column-justify-center;
     gap: 30px;
-
+    
     @include tab {
       width: 90%;
     }
@@ -17,10 +27,8 @@
 
     .accordion-item {
       width: 100%;
-      /*margin-top: 40px;*/
-      position: relative;
       top: 0px;
-
+      
       .accordion-title {
         height: 50px;
         @include flex-items-center;
@@ -35,6 +43,7 @@
       .accordion-content  {
         overflow: hidden;
         background-color: $card-color;
+        border-radius: 0px 0px 10px 10px;
         color: $primary-color;
         font-size: 18px;
         font-weight: 500;
@@ -43,17 +52,6 @@
         position: relative;
         top: -10px;
       }
-
-     /* .open, {
-        max-height: 1000px;
-        transition: all 2s ease-in-out ease-in-out;
-        transform: translateY(-10px);
-      }
-
-      .close {
-        max-height: 0px;
-        display: none;
-      }*/
 
       .arrow {
         width: 20px;

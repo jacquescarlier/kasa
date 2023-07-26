@@ -3,10 +3,11 @@ footer {
   height: 209px;
   background-color: black;
   color: $neutral-color;
-  margin: 20px 0px 0px 0px;
+  margin: 0px;
   @include flex-justify-items-center;
   flex-direction: column;
   row-gap: 30px;
+  margin-top: 38px;
 
   @include phone {
     gap: 0px;

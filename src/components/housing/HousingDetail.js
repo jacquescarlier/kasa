@@ -1,9 +1,9 @@
 import Star from "../star/Star";
-import HousingTable from "./HousingTable"
+import { useParams } from "react-router-dom";
 
-const HousingTitle = () => {
-  const logement = HousingTable();
-  
+const HousingTitle = ({logement}) => {
+ 
+ 
 
   return (
     <section className="title" >

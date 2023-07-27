@@ -1,13 +1,11 @@
 import React from 'react';
-import logements from '../../datas/logements.json'
 import { useParams } from "react-router-dom";
 import Accordion from '../accordions/Accordion';
 
+
 const title = ["Description", "Équipements"]
 
-const HousingDropdown = () => {
-    const { id } = useParams()
-    const logement = logements.find((housing) => housing.id === id)
+const HousingDropdown = ({logement}) => {
    
     return (
         <section className="accordionSection ">

@@ -1,6 +1,6 @@
 import Star from "../star/Star";
 
-const HousingTitle = ({ logement }) => {
+const HousingDetail = ({ logement }) => {
 const starHousingDetail = logement.rating
 
   return (
@@ -24,4 +24,4 @@ const starHousingDetail = logement.rating
     </section>
   )
 }
-export default HousingTitle; 
+export default HousingDetail; 

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Page404 = () => {
   return (
     <div>
-      <container-general>
+      <div className="container-general">
         <Header />
         <div className="page404">
           <h1>404</h1>
@@ -15,7 +15,7 @@ const Page404 = () => {
             <p className="goHome">Retourner sur la page d'accueil</p>
           </NavLink>
         </div>
-      </container-general>
+      </div>
       <Footer />
     </div>
   );

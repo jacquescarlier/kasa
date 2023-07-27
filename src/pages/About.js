@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <div>
-      <container-general>
+      <div className="container-general">
         <Header />
         <Banner image={picture} alt="photo de montagne" title="" />
         <section className="accordionSection">
@@ -20,7 +20,7 @@ const About = () => {
             ))}
           </div>
         </section>
-      </container-general>
+      </div>
       <Footer />
     </div>
   );

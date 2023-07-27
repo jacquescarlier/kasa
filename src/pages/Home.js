@@ -8,7 +8,7 @@ import picture from "../pictures/banniere.png";
 const Home = () => {
   return (
     <div>
-      <container-general>
+      <div className="container-general">
         <Header />
         <Banner
           image={picture}
@@ -16,7 +16,7 @@ const Home = () => {
           title="Chez vous, partout et ailleurs"
         />
         <Cards />
-      </container-general>
+      </div>
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import HousingCarousel from "../components/carousel/HousingCarousel";
-import HousingTitle from "../components/housing/HousingDetail";
+import HousingDetail from "../components/housing/HousingDetail";
 import HousingDropdown from "../components/housing/HousingDropdown";
 import { useParams } from "react-router-dom"
 import logements from '../datas/logements.json'
@@ -13,12 +13,12 @@ const HousingFile = () => {
   
   return (
     <div>
-      <container-general>
+      <div className="container-general">
         <Header />
         <HousingCarousel logement ={logement} />
-        <HousingTitle logement ={logement} />
+        <HousingDetail logement ={logement} />
         <HousingDropdown logement ={logement} />
-      </container-general>
+      </div>
       <Footer />
     </div>
   );

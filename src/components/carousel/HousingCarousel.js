@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import ArrowRight from "../pictures/arrow_forward.png"
-import ArrowLeft from "../pictures/arrow_back.png"
-import HousingTable from "./HousingTable"
+import ArrowRight from "../../pictures/arrow_forward.png"
+import ArrowLeft from "../../pictures/arrow_back.png"
+import HousingTable from "../housing/HousingTable";
 
 function Carousel() {
     const logement = HousingTable();

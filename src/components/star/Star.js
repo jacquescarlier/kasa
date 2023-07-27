@@ -1,6 +1,6 @@
-import starActive from "../pictures/star-active 1.png"
-import starInactive from "../pictures/star-inactive 1.png"
-import HousingTable from "./HousingTable"
+import starActive from "../../pictures/star-active 1.png"
+import starInactive from "../../pictures/star-inactive 1.png"
+import HousingTable from "../housing/HousingTable"
 
 const Star = () => {
 

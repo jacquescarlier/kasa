@@ -1,5 +1,5 @@
-import Navigation from "./Navigation";
-import logoKasa from "../pictures/LogoKasa.png"
+import Navigation from "../navigation/Navigation";
+import logoKasa from "../../pictures/LogoKasa.png"
 function Header() {
   return (
     <div className="header">

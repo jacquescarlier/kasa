@@ -1,7 +1,7 @@
 import React from 'react';
-import logements from '../datas/logements.json'
+import logements from '../../datas/logements.json'
 import { useParams } from "react-router-dom";
-import Accordion from './Accordion';
+import Accordion from '../accordions/Accordion';
 
 const title = ["Description", "Équipements"]
 

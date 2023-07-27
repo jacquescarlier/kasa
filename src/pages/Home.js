@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Cards from "../components/Cards";
-import Footer from "../components/Footer";
+import Header from "../components/header/Header";
+import Banner from "../components/banner/Banner";
+import Cards from "../components/card/Cards";
+import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniere.png";
 
 const Home = () => {

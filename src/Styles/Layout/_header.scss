@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-
+  margin-bottom: 50px;
   @include phone {
     height: 57px;
+    margin-bottom: 27px;
   }
 
   img {

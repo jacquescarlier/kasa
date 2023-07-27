@@ -17,10 +17,10 @@ container-general {
   grid-template-rows: auto 1fr auto;
 
   @include desktop-large {
-    padding: 20px 2.67%;
+    padding: 45px 2.67% 22px 2.67px;
   }
 
   @include phone {
-    padding: 10px 2.67%;
+    padding: 20px 2.67% 22px 2.67px;
   }
 }

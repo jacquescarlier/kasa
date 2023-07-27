@@ -4,14 +4,14 @@
   @include flex-justify-items-center;
 
   h1 {
-    font-size: 250px;
+    font-size: 260px;
     font-weight: 700;
     color: $primary-color;
-    margin: 8% 0;
+    margin: 112px 0 139px 0;
 
     @include phone {
       font-size: 92px;
-      margin: 30% 0;
+      margin: 113px 0;
     }
   }
 
@@ -19,11 +19,13 @@
     color: $primary-color;
     font-size: 36px;
     font-weight: 500;
-    margin: 8% auto;
+    margin: 0 auto;
+    margin-bottom: 139px;
+    text-align: center;
 
     @include phone {
       font-size: 18px;
-      margin: 0 0 30% 0;
+      margin-bottom: 113px ;
       width: 70%;
     }
   }
@@ -31,11 +33,12 @@
   .goHome {
     color: $primary-color;
     font-size: 18px;
-    margin: 8% auto;
+    margin-bottom: 139px;
     text-decoration: underline #ff6060;
 
     @include tab {
       font-size: 16px;
+      margin-bottom: 93px;
     }
 
     @include phone {

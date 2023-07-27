@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import Header from "../components/header/Header";
+import Banner from "../components/banner/Banner";
+import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniereAbout.png";
-import Accordion from "../components/Accordion";
+import Accordion from "../components/accordions/Accordion";
 import { accordionData } from "../datas/accordionAboutData";
 
 const About = () => {

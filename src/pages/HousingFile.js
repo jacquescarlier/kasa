@@ -1,10 +1,13 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import HousingCarousel from "../components/HousingCarousel";
-import HousingTitle from "../components/HousingDetail";
-import HousingDropdown from "../components/HousingDropdown";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+import HousingCarousel from "../components/carousel/HousingCarousel";
+import HousingTitle from "../components/housing/HousingDetail";
+import HousingDropdown from "../components/housing/HousingDropdown";
+
 
 const HousingFile = () => {
+
+  
 
   return (
     <div>

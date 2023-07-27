@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import logements from '../datas/logements.json'
+import logements from '../../datas/logements.json'
 
 const HousingTable = () => {
     const { id } = useParams();

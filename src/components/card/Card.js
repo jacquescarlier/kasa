@@ -1,4 +1,4 @@
-import logements from "../datas/logements.json";
+import logements from "../../datas/logements.json";
 import React from "react";
 import { Link } from "react-router-dom";
 

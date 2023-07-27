@@ -1,9 +1,7 @@
 import Star from "../star/Star";
-import { useParams } from "react-router-dom";
 
-const HousingTitle = ({logement}) => {
- 
- 
+const HousingTitle = ({ logement }) => {
+const starHousingDetail = logement.rating
 
   return (
     <section className="title" >
@@ -22,7 +20,7 @@ const HousingTitle = ({logement}) => {
           ))}
         </div >
       </div>
-      <Star />
+      <Star logement={starHousingDetail}/>
     </section>
   )
 }

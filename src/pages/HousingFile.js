@@ -8,19 +8,16 @@ import logements from '../datas/logements.json'
 
 const HousingFile = () => {
 
-  
     const { id } = useParams();
     const logement = logements.find((item) => item.id === id)
-    
-
-
+  
   return (
     <div>
       <container-general>
         <Header />
-        <HousingCarousel />
+        <HousingCarousel logement ={logement} />
         <HousingTitle logement ={logement} />
-        <HousingDropdown logement = {logement} />
+        <HousingDropdown logement ={logement} />
       </container-general>
       <Footer />
     </div>

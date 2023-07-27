@@ -3,9 +3,7 @@ import Arrow from "../../pictures/arrow_down.png";
 
 const Accordion = ({ title, content }) => {
     const [isActive, setIsActive] = useState(false);
-    const [isRotated, setIsRotated] = useState(false);
     const handleClick = () => {
-        setIsRotated(!isRotated)
         setIsActive(!isActive)
     };
 
@@ -16,7 +14,7 @@ const Accordion = ({ title, content }) => {
                 <div> <img
                     src={Arrow}
                     alt="Fléche pour afficher le description"
-                    className={isRotated ? "rotated" : "arrow"} />
+                    className={isActive ? "rotated" : "arrow"} />
                 </div>
             </div>
             {isActive && <div className="accordion-content">{content}</div>}

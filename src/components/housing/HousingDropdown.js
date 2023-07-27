@@ -1,7 +1,5 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
 import Accordion from '../accordions/Accordion';
-
 
 const title = ["Description", "Équipements"]
 

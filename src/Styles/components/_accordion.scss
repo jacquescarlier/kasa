@@ -1,7 +1,6 @@
 .accordionSection {
   border-radius: 10px;
   padding: 0;
-  /*@include flex-justify-items-center;*/
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -51,8 +50,7 @@
         padding: 20px;
         position: relative;
         top: -10px;
-        max-height: 1000px;
-      
+        /*max-height: 1000px;*/
       }
       
 

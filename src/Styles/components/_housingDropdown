@@ -61,7 +61,7 @@
       }
     }
   }
-
+/*
   .open {
     display: block;
     transform: translateY(-10px);
@@ -70,7 +70,7 @@
   .close {
     display: none;
   }
-
+*/
   .arrow {
     width: 20px;
     height: 20px;

@@ -42,6 +42,9 @@
       color: $primary-color;
       font-size: 18px;
       padding: 20px;
+      max-height: 100%;
+        opacity: 1;
+        transition:  all 2000ms ease-in-out;
 
       p {
         font-size: 18px;
@@ -61,16 +64,7 @@
       }
     }
   }
-/*
-  .open {
-    display: block;
-    transform: translateY(-10px);
-  }
 
-  .close {
-    display: none;
-  }
-*/
   .arrow {
     width: 20px;
     height: 20px;

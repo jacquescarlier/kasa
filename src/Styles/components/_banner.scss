@@ -3,7 +3,6 @@
   position: relative;
   margin-bottom: 38px;
 
-
   img {
     height: 223px;
     width: 100%;
@@ -30,17 +29,31 @@
     font-weight: 500;
     margin: 0;
     text-align: center;
+    @include flex-row;
+    @include flex-justify-items-center;
+    gap: 5px;
+
+    @include desktop {
+      font-size: 42px;
+    }
 
     @include tab {
       font-size: 30px;
-     
     }
 
     @include phone {
-      width: 65%;
+      padding: 0;
+      margin: 0;
+      width: 100%;
       font-size: 24px;
       text-align: left;
-      margin-left: 15px;
+      padding: 16px;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+    }
+
+    p {
+      text-align: left;
     }
   }
 }

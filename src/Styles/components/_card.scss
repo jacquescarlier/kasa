@@ -96,7 +96,10 @@
         align-items: flex-end;
 
         @include tab {
-          width: 55%;
+          width: 65%;
+        }
+        @include phone {
+          width: 75%;
         }
       }
     }

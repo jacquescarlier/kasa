@@ -40,7 +40,7 @@
       }
 
       .accordion-content  {
-        overflow: hidden;
+        /*overflow: hidden;*/
         background-color: $card-color;
         border-radius: 0px 0px 10px 10px;
         color: $primary-color;
@@ -50,7 +50,9 @@
         padding: 20px;
         position: relative;
         top: -10px;
-        /*max-height: 1000px;*/
+        max-height: 100%;
+        opacity: 1;
+        transition:  all 2000ms ease-in-out;
       }
       
 

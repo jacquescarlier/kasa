@@ -4,14 +4,14 @@
   @include flex-justify-items-center;
 
   h1 {
-    font-size: 260px;
+    font-size: 258px;
     font-weight: 700;
     color: $primary-color;
-    margin: 112px 0 139px 0;
+    margin: 89px 0 139px 0;
 
     @include phone {
-      font-size: 92px;
-      margin: 113px 0;
+      font-size: 96px;
+      margin: 86px 0 113px 0;
     }
   }
 
@@ -33,12 +33,12 @@
   .goHome {
     color: $primary-color;
     font-size: 18px;
-    margin-bottom: 139px;
+    margin-bottom: 101px;
     text-decoration: underline #ff6060;
 
     @include tab {
       font-size: 16px;
-      margin-bottom: 93px;
+      margin-bottom: 75px;
     }
 
     @include phone {

@@ -16,7 +16,6 @@ function Card() {
           <p className="card-title">{logement.title}</p>
         </Link>
       ))}
-      ;
     </div>
   );
 }

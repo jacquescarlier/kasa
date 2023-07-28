@@ -12,7 +12,7 @@ const About = () => {
     <div>
       <div className="container-general">
         <Header />
-        <Banner image={picture} alt="photo de montagne" title="" />
+        <Banner image={picture} alt="photo de montagne" title1="" title2="" className="banner-about" />
         <section className="accordionSection">
           <div className="accordionBody">
             {accordionData.map(({ title, content, id }) => (

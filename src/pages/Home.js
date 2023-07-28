@@ -13,7 +13,8 @@ const Home = () => {
         <Banner
           image={picture}
           alt="photo de montagne"
-          title="Chez vous, partout et ailleurs"
+          title1= "Chez vous,"
+          title2 = "partout et ailleurs"
         />
         <Cards />
       </div>

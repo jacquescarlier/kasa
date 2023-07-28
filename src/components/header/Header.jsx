@@ -1,4 +1,4 @@
-import Navigation from "../../components/navigation/Navigation";
+import Navigation from "../navigation/Navigation";
 import logoKasa from "../../pictures/LogoKasa.png"
 function Header() {
   return (

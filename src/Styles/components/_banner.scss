@@ -3,22 +3,6 @@
   position: relative;
   margin-bottom: 38px;
 
-  img {
-    height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-    filter: brightness(0.6);
-  
-    @include tab {
-      height: 176px;
-    }
-  
-    @include phone {
-      height: 111px;
-    }
-  }
-
   .banner-text {
     width: 100%;
     position: absolute;
@@ -57,8 +41,7 @@
     }
   }
 }
-/*.banner-home 
-img {
+.banner-home img {
   height: 223px;
   width: 100%;
   border-radius: 25px;
@@ -79,4 +62,4 @@ img {
   border-radius: 25px;
   object-fit: cover;
   filter: brightness(0.6);
-}*/
+}

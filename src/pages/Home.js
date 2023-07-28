@@ -4,18 +4,24 @@ import Banner from "../components/banner/Banner";
 import Cards from "../components/card/Cards";
 import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniere.png";
+let banner = "image-banner banner-home"
 
 const Home = () => {
+  console.log("baba", banner)
+
   return (
     <div>
       <div className="container-general">
         <Header />
-        <Banner
-          image={picture}
-          alt="photo de montagne"
-          title1= "Chez vous,"
-          title2 = "partout et ailleurs"
-        />
+        <section className="image-banner banner-home">
+          <Banner
+            className="image-banner"
+            image={picture}
+            alt="photo de montagne"
+            title1="Chez vous,"
+            title2="partout et ailleurs"
+          />
+        </section>
         <Cards />
       </div>
       <Footer />

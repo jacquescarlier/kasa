@@ -1,11 +1,11 @@
 import React from "react";
 
-function Banner({ image, title1, title2, alt}) {
+function Banner({ image, alt,title1, title2 }) {
  
   return (
     <div>
       <img src={image} alt={alt} />
-      <h1 className="banner-text"><p>{title1}</p><p>{title2}</p></h1>
+      <h1 className="banner-text"><span>{title1}</span><span>{title2}</span></h1>
       </div>
   );
 }

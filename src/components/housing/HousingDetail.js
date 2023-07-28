@@ -1,9 +1,6 @@
 import Star from "../star/Star";
-import { useNavigate } from "react-router-dom";
-
 
 const HousingDetail = ({ logement }) => {
-
   const starHousingDetail = logement.rating
 
   return (

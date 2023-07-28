@@ -11,8 +11,8 @@ const HousingFile = () => {
 
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
-
   const navigate = useNavigate();
+
   useEffect(() => {
     if (!logement) {
       console.log("Redirection Page 404");
@@ -23,7 +23,6 @@ const HousingFile = () => {
   if (!logement) {
     return null
   }
-
 
   return (
     <div>
@@ -37,5 +36,4 @@ const HousingFile = () => {
     </div>
   );
 };
-
 export default HousingFile;

@@ -18,5 +18,4 @@ const HousingDropdown = ({logement}) => {
         </section>
     );
 };
-
 export default HousingDropdown;

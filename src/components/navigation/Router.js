@@ -5,7 +5,6 @@ import Home from "../../pages/Home";
 import HousingFile from "../../pages/HousingFile";
 import Page404 from "../../pages/Page404";
 
-
 function Router() {
  
   return (

@@ -6,7 +6,7 @@ import HousingFile from "../../pages/HousingFile";
 import Page404 from "../../pages/Page404";
 
 function Router() {
- 
+
   return (
     <div>
       <BrowserRouter>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Arrow from "../../pictures/arrow_down.png";
 
 const Accordion = ({ title, content }) => {

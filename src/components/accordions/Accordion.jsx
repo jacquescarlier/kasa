@@ -5,8 +5,9 @@ const Accordion = ({ title, content }) => {
     const [isActive, setIsActive] = useState(false);
     const handleClick = () => {
         //setIsActive(!isActive)
-       setTimeout(setIsActive(!isActive), 5000)
+       setTimeout(setIsActive(!isActive), 50000)
        console.log("settimeout")
+     
     };
     //function  waitToUp()  {setTimeout("accordion-content", 5000);console.log("settimeout")}
 

@@ -4,14 +4,14 @@
 @import './Bases/setting';
 @import './Utils/flex';
 @import './Utils/animations';
-@import './components/navigation';
-@import './Layout/header';
-@import './components/banner';
-@import './components/card';
-@import './Layout/footer';
-@import './components/star';
+@import '../components/navigation/navigation';
+@import '../components/header/header';
+@import '../components/banner/banner';
+@import '../components/card/card';
+@import '../components/footer/footer';
+@import '../components/star/star';
 @import './pages/404';
-@import './components/accordion';
-@import './components/carousel';
-@import './components/HousingFile';
-/*@import './components/housingDropdown';*/
+@import '../components/accordions/accordion';
+@import '../components/carousel/carousel';
+@import '../components/housing/housingFile';
+

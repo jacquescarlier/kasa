@@ -83,7 +83,8 @@
         display: none;
         position: relative;
         top: -30px;
-        @include goingUp;
+       
+        /*@include goingUp;*/
       }
 
       .accordion-content-active {
@@ -96,9 +97,10 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 25px;
-        padding: 20px;
+        padding: 40px 20px;
         position: relative;
         top: -10px;
+        max-height: 1000px;
         @include descending;
 
         @include desktop {
@@ -107,6 +109,7 @@
 
         @include tab {
           font-size: 16px;
+          padding: 30px 20px;
         }
 
         @include phone {
@@ -114,26 +117,33 @@
         }
 
         ul {
-          padding-top: 10px;
+          padding: 10px 0px 20px 0px;
           @include flex-column;
-      
+
+          @include phone {
+            padding: 0px 0px 10px 0px;
+          }
+
           li {
+            margin-bottom: -15px;
             font-size: 24px;
             font-weight: 500;
             color: $primary-color;
-            line-height: 0px;
+            line-height: 0;
             text-align: left;
       
             @include desktop {
               font-size: 18px;
+              margin-bottom: -20px;
             }
-      
+
             @include tab {
               font-size: 16px;
             }
       
             @include phone {
               font-size: 13px;
+              margin-bottom: 0px;
             }
           }
         }

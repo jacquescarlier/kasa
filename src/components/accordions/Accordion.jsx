@@ -4,9 +4,12 @@ import Arrow from "../../pictures/arrow_down.png";
 const Accordion = ({ title, content }) => {
     const [isActive, setIsActive] = useState(false);
     const handleClick = () => {
-        setIsActive(!isActive)
+        //setIsActive(!isActive)
+       setTimeout(setIsActive(!isActive), 5000)
+       console.log("settimeout")
     };
- 
+    //function  waitToUp()  {setTimeout("accordion-content", 5000);console.log("settimeout")}
+
    // {isActive && <div className="accordion-content isActive">{content}</div>}
     return (
         <div className="accordion-item">

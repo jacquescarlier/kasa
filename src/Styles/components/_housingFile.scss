@@ -96,8 +96,8 @@
 }
 
 .housingDetail {
-  display: flex;
-  flex-flow: row nowrap;
+  @include flex-row;
+  @include nowrap;
   justify-content: normal;
   justify-content: space-between;
   width: 70%;
@@ -109,12 +109,11 @@
 }
 
 .housingInformation {
-  display: flex;
-  flex-direction: row;
-  justify-content: normal;
-  gap: 15px;
+  @include flex-row;
+  @include wrap;
+  /*justify-content: normal;*/
   align-items: center;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .housingDetail p {
@@ -133,6 +132,6 @@
 
   @include phone {
     font-size: 10px;
-    padding: 5px 10px;
+    padding: 5px 15px;
   }
 }

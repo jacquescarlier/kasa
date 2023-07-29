@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Arrow from "../../pictures/arrow_down.png";
 
 const Accordion = ({ title, content }) => {
@@ -6,7 +6,7 @@ const Accordion = ({ title, content }) => {
     const handleClick = () => {
         setIsActive(!isActive)
     };
-// <div className={(acordion) => (accordion.isActive ? "accordion-content-active" : "accordion-content")}></div>
+ 
    // {isActive && <div className="accordion-content isActive">{content}</div>}
     return (
         <div className="accordion-item">

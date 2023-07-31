@@ -83,8 +83,11 @@
         display: none;
         position: relative;
         top: -30px;
+        /*max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;*/
       }
-
+      
       .accordion-content-active {
         display: block;
         overflow: hidden;
@@ -112,7 +115,7 @@
         @include phone {
           font-size: 13px;
         }
-
+       
         ul {
           padding: 10px 0px 20px 0px;
           @include flex-column;

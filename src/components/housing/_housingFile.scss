@@ -79,7 +79,7 @@
 
 .titleName p {
   font-size: 18px;
-  padding: 0 ;
+  padding: 0;
   margin-right: 10px;
   text-align: right;
   width: 93px;
@@ -111,7 +111,6 @@
 .housingInformation {
   @include flex-row;
   @include wrap;
-  /*justify-content: normal;*/
   align-items: center;
   gap: 15px;
 }

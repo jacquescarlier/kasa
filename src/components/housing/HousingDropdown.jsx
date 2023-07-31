@@ -3,8 +3,8 @@ import Accordion from '../accordions/Accordion';
 
 const title = ["Description", "Équipements"]
 
-const HousingDropdown = ({logement}) => {
-   
+const HousingDropdown = ({ logement }) => {
+
     return (
         <section className="accordionSection ">
             <div className="accordionBody">

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import ArrowRight from "../../pictures/arrow_forward.png"
 import ArrowLeft from "../../pictures/arrow_back.png"
 
-const Carousel = ({ logement }) =>  {
+const Carousel = ({ logement }) => {
     const pictureLength = logement.pictures.length;
     const [currentPictureIndex, setcurrentPictureIndex] = useState(0);
     //counter display constant at  the bottom of the image "currentPictureIndex +1" because ID starts at 0

@@ -12,8 +12,8 @@ const About = () => {
     <div>
       <div className="container-general">
         <Header />
-       <section className="image-banner banner-about">
-        <Banner image={picture} alt="photo de montagne" title1="" title2=""  />
+        <section className="image-banner banner-about">
+          <Banner image={picture} alt="photo de montagne" title1="" title2="" />
         </section>
         <section className="accordionSection">
           <div className="accordionBody">

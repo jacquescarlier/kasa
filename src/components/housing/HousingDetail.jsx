@@ -20,7 +20,7 @@ const HousingDetail = ({ logement }) => {
           ))}
         </div >
       </div>
-      <Star logement={starHousingDetail}/>
+      <Star logement={starHousingDetail} />
     </section>
   )
 }

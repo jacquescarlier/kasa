@@ -83,11 +83,8 @@
         display: none;
         position: relative;
         top: -30px;
-        /*max-height: 0;
-        opacity: 0;
-        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;*/
       }
-      
+
       .accordion-content-active {
         display: block;
         overflow: hidden;
@@ -115,7 +112,7 @@
         @include phone {
           font-size: 13px;
         }
-       
+
         ul {
           padding: 10px 0px 20px 0px;
           @include flex-column;
@@ -131,7 +128,7 @@
             color: $primary-color;
             line-height: 0;
             text-align: left;
-      
+
             @include desktop {
               font-size: 18px;
               margin-bottom: -20px;
@@ -140,7 +137,7 @@
             @include tab {
               font-size: 16px;
             }
-      
+
             @include phone {
               font-size: 13px;
               margin-bottom: 0px;
@@ -148,8 +145,6 @@
           }
         }
       }
-
-     
     }
   }
 }

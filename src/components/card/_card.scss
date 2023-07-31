@@ -27,7 +27,7 @@
     gap: 45px;
 
     @include desktop-large {
-      gap: 25px;
+      gap: 35px;
     }
 
     @include tab {
@@ -46,10 +46,6 @@
       border-radius: 20px;
       position: relative;
 
-      @include desktop-large {
-        height: 300px;
-      }
-
       @include desktop {
         height: 280px;
         width: 45%;
@@ -67,9 +63,7 @@
 
       &::before {
         content: "";
-        background: linear-gradient(180deg,
-            rgba(255, 96, 96, 0.1195071779) 74%,
-            rgba(45, 21, 21, 0.3071822479) 90%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         position: absolute;
         width: 100%;
         height: 100%;

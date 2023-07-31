@@ -1,4 +1,4 @@
-import logoKasa from "../../pictures/LogoKasa.png"
+import logoKasa from "../../pictures/LogoKasa.png";
 
 function Footer() {
   return (

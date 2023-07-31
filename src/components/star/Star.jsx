@@ -1,7 +1,7 @@
 import starActive from "../../pictures/star-active 1.png"
 import starInactive from "../../pictures/star-inactive 1.png"
 
-const  Star = (starHousingDetail) => {
+const Star = (starHousingDetail) => {
     const rating = starHousingDetail.logement
     const maxRating = 5;
     const star = [];
@@ -16,7 +16,7 @@ const  Star = (starHousingDetail) => {
     }
 
     return (
-            <div className="star"> {star}</div>
+        <div className="star"> {star}</div>
     );
 };
 

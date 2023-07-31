@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniere.png";
 
 const Home = () => {
-  
+
   return (
     <div>
       <div className="container-general">

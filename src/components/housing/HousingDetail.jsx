@@ -1,7 +1,7 @@
 import Star from "../star/Star";
 
 const HousingDetail = ({ logement }) => {
-  const starHousingDetail = logement.rating
+  const {rating} = logement
 
   return (
     <section className="title" >
@@ -20,7 +20,7 @@ const HousingDetail = ({ logement }) => {
           ))}
         </div >
       </div>
-      <Star logement={starHousingDetail} />
+      <Star starRating={rating} />
     </section>
   )
 }

@@ -27,7 +27,7 @@ const Carousel = ({ logement }) => {
     }
     return (
         <section className="carousel">
-            <img src={currentPicture} alt="logement" className="carouselPicture" />
+            <img src={currentPicture} alt={logement.title} className="carouselPicture" />
             <img src={ArrowRight} alt="Fléche droite " onClick={nextPicture} className="carouselArrow carouselArrowRight "></img>
             <img src={ArrowLeft} alt='Fléche gauche' onClick={previousPicture} className="carouselArrow carouselArrowLeft"></img>
             <div className="carouselCounter"> {pictureCounter}</div>

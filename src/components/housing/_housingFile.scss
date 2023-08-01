@@ -2,7 +2,7 @@
   @include flex-row;
   justify-content: normal;
   justify-content: space-between;
-  flex-wrap: wrap;
+ @include wrap;
   width: 100%;
   color: #ff6060;
   padding: 0px 0px 20px 0px;
@@ -24,11 +24,12 @@
   h1 {
     font-size: 36px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 51px;
     padding-bottom: 10px;
 
     @include phone {
       font-size: 18px;
+      line-height: 25px;
     }
   }
 

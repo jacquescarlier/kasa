@@ -21,8 +21,6 @@
 
   .card-style {
     @include flex-row-justify;
-    /*@include flex-row;*/
-    /*pas de centrage les 2 dernières cartes seront à gauche*/
     flex-wrap: wrap;
     gap: 45px;
 

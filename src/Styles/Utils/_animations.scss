@@ -8,20 +8,6 @@
   transform: rotate(0deg);
 }
 
-@mixin goingUp {
-  animation: goingUp 3s linear forwards;
-}
-
-@keyframes goingUp {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
 @mixin descending {
   animation: descending 0.2s linear forwards;
 }

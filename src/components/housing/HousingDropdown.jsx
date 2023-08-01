@@ -5,13 +5,15 @@ const title = ["Description", "Équipements"]
 
 const HousingDropdown = ({ logement }) => {
 
+    const { description, equipments} = logement
+
     return (
         <section className="accordionSection ">
             <div className="accordionBody">
-                <Accordion key={title} title={title[0]} content={<p>{logement.description}</p>} />
+                <Accordion key={title} title={title[0]} content={<p>{description}</p>} />
             </div>
             <div className="accordionBody">
-                <Accordion key={title} title={title[1]} content={<ul>{logement.equipments.map((equipement) =>
+                <Accordion key={title} title={title[1]} content={<ul>{equipments.map((equipement) =>
                     <li key={equipement}>{equipement}</li>)}
                 </ul>} />
             </div>

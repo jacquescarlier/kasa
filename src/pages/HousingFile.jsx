@@ -17,8 +17,7 @@ const HousingFile = () => {
     if (!logement) {
       console.log("Redirection Page 404");
       navigate("/Page404");
-    }
-    
+    } 
   }, [logement, navigate]);
 
   if (!logement) {

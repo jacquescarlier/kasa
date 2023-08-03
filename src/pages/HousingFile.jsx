@@ -15,7 +15,6 @@ const HousingFile = () => {
 
   useEffect(() => {
     if (!logement) {
-      console.log("Redirection Page 404");
       navigate("/Page404");
     } 
   }, [logement, navigate]);

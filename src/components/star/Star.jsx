@@ -16,7 +16,7 @@ const Star = ({starRating}) => {
     }
 
     return (
-        <div className="star"> {star}</div>
+        <div className="star">{star}</div>
     );
 };
 

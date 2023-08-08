@@ -2,9 +2,7 @@ import React, { useState } from "react"
 import ArrowRight from "../../pictures/arrow_forward.png"
 import ArrowLeft from "../../pictures/arrow_back.png"
 
-const Carousel = ({ logement }) => {
-
-    const {pictures, title} = logement
+const Carousel = ({ pictures, title }) => {
 
     const pictureLength = pictures.length;
     const [currentPictureIndex, setcurrentPictureIndex] = useState(0);

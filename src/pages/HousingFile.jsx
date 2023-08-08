@@ -3,35 +3,29 @@ import Footer from "../components/footer/Footer";
 import HousingCarousel from "../components/carousel/HousingCarousel";
 import HousingDetail from "../components/housing/HousingDetail";
 import HousingDropdown from "../components/housing/HousingDropdown";
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import logements from '../datas/logements.json'
 
 const HousingFile = () => {
 
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!logement) {
-      navigate("/Page404");
-    } 
-  }, [logement, navigate]);
-
-  if (!logement) {
-    return null
-  }
+  
 
   return (
     <div>
-      <div className="container-general">
-        <Header />
-        <HousingCarousel logement={logement} />
-        <HousingDetail logement={logement} />
-        <HousingDropdown logement={logement} />
-      </div>
-      <Footer />
+      {!logement && (<Navigate to='Page404' replace={true} />)}
+      {logement && (
+        <div>
+          <div className="container-general">
+            <Header />
+            <HousingCarousel pictures={logement.pictures} title={logement.title} />
+            <HousingDetail logement={logement} />
+            <HousingDropdown description={logement.description} equipments={logement.equipments} />
+          </div>
+          <Footer />
+        </div>
+      )} 
     </div>
   );
 };

@@ -11,7 +11,6 @@ const HousingFile = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   
-
   return (
     <div>
       {!logement && (<Navigate to='Page404' replace={true} />)}

@@ -12,9 +12,6 @@ function RouterGithub()  {
             <BrowserRouter>
         <Routes>
           <Route path ="/kasa/" element={<Home />} />
-          <Route path = "https://jacquescarlier.github.io/" element ={<Home />} />
-          <Route path = "https://jacquescarlier.github.io/HousingFile/:id" element={<HousingFile />} />
-          <Route path = "https://jacquescarlier.github.io/about" element={<About />} />
         </Routes>
       </BrowserRouter>
         </div>

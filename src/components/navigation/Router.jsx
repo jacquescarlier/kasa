@@ -16,6 +16,7 @@ function Router() {
           <Route path="/HousingFile/:id" element={<HousingFile />} />
           <Route path="*" element={<Page404 />} />
           <Route path="/HousingFile/*" element={<Page404 />} />
+          <Route path ="/kasa/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

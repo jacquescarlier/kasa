@@ -19,7 +19,10 @@ function Router() {
           <Route path="*" element={<Page404 />} />
           <Route path="/HousingFile/*" element={<Page404 />} />
           <Route path ="/kasa/" element={<Home />} />
-          <Route path = "jacquescarlier.github.io/" element ={<Home />} />
+          <Route path = "https://jacquescarlier.github.io/" element ={<Home />} />
+          <Route path = "https://jacquescarlier.github.io/HousingFile/:id" element={<HousingFile />} />
+          <Route path = "https://jacquescarlier.github.io/about" element={<About />} />
+
         </Routes>
       </BrowserRouter>
     </div>

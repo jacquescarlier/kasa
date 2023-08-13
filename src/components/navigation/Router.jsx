@@ -5,6 +5,8 @@ import Home from "../../pages/Home";
 import HousingFile from "../../pages/HousingFile";
 import Page404 from "../../pages/Page404";
 
+// la route /kasa/ est pour la publication du site sur github pages
+
 function Router() {
 
   return (

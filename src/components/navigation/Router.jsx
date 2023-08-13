@@ -21,8 +21,10 @@ function Router() {
           <Route path ="/kasa/" element={<Home />} />
           <Route path ="/kasa/*" element={<Page404 />} />
           <Route path = "/jacquescarlier.github.io/" element ={<Home />} />
-        
-
+          <Route path = "/jacquescarlier.github.io/HousingFile/:id" element ={<HousingFile />} />
+          <Route path = "/jacquescarlier.github.io/about" element ={<About />} />
+          <Route path = "/jacquescarlier.github.io/*" element ={<Page404 />} />
+          <Route path = "/jacquescarlier.github.io/HousingFile/*" element ={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </div>

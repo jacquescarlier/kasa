@@ -17,10 +17,10 @@ Runs the app in the development mode.\
 >[!NOTE]
 
 > # React + Vite in another repository, using fetch for housing json file
-    Open [https://github.com/jacquescarlier/kasa_React_et_Vite]
+  >  Open [https://github.com/jacquescarlier/kasa_React_et_Vite]
 
-### `npm run dev`
+>### `npm run dev`
 
-Runs the app in the devlopment mode.\
+>Runs the app in the devlopment mode.\
 
- Open [http://localhost:5173/] to view it in your browser.
+ >Open [http://localhost:5173/] to view it in your browser.

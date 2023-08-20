@@ -14,10 +14,10 @@ Runs the app in the development mode.\
 
 ### `npm run build`
 
-[!NOTE]
+>[!NOTE]
 
 # React + Vite in another repository, using fetch for housing json file
-** Open [https://github.com/jacquescarlier/kasa_React_et_Vite] **
+    Open [https://github.com/jacquescarlier/kasa_React_et_Vite]
 
 ### `npm run dev`
 

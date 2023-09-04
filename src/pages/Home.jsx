@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "../components/header/Header";
 import Banner from "../components/banner/Banner";
-import Cards from "../components/card/Cards";
 import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniere.png";
-
+import Card from "../components/card/Card";
 const Home = () => {
 
   return (
@@ -20,7 +19,9 @@ const Home = () => {
             title2="partout et ailleurs"
           />
         </section>
-        <Cards />
+        <section className="cards">
+          <Card />
+        </section>
       </div>
       <Footer />
     </div>

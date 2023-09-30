@@ -9,4 +9,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+RUN npm  build
+
+EXPOSE 80

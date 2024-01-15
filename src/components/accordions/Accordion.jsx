@@ -14,7 +14,6 @@ const Accordion = ({ title, content }) => {
       <div className="accordion-title" onClick={handleClick}>
         <div className="dropdownTitle">{title}</div>
         <div>
-          {" "}
           <img
             src={Arrow}
             alt="Fléche pour afficher le description"
